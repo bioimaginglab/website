@@ -1,22 +1,36 @@
+$(document).ready(function() {
+    // Load home.html by default
+    $("#home").load("home.html");
+});
+
 document.addEventListener("DOMContentLoaded", function() {
     const navLinks = document.querySelectorAll(".navbar a");
     const sections = document.querySelectorAll(".section");
-    const contentArea = document.querySelector(".content");  // 获取内容区域
+    const contentArea = document.querySelector(".content");
 
     navLinks.forEach(link => {
         link.addEventListener("click", function(e) {
             e.preventDefault();
 
-            // 隐藏所有section内容
+            // Hide all sections
             sections.forEach(section => {
                 section.style.display = "none";
             });
 
-            contentArea.style.display = "block";  // 显示整个内容区域
+            contentArea.style.display = "block";
 
-            // 显示被点击的section内容
+            // Show the target section
             const targetId = this.getAttribute("data-section");
             const targetSection = document.getElementById(targetId);
+
+            // Check if the link is for 'home'
+                // Fetch the content of home.html and insert it into the target div
+            fetch(targetId+'.html')
+            .then(response => response.text())
+            .then(data => {
+                targetSection.innerHTML = data;
+            });
+
             targetSection.style.display = "block";
         });
     });

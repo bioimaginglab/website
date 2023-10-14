@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 10%;
+    padding: 10%;
 }
 
 .navbar {
@@ -24,7 +24,7 @@ body {
 }
 
 .content {
-    height: 70%;
+    height: 80%;
     padding: 5% 15%;
     display: block;  /* 初始隐藏所有内容 */
 }
@@ -34,7 +34,7 @@ body {
 }
 
 .footer {
-    height: 15%;
+    height: 10%;
     background-color: #f1f1f1;
     padding: 2% 5%;
 }

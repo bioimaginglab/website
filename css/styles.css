@@ -42,3 +42,23 @@ body {
 #home {
     display: block;
 }
+
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; /* Horizontally aligns the child element to the center */
+    align-items: center;     /* Vertically aligns the child element to the center */
+    height: 100%;
+}
+
+.image-container img {
+    max-width: 80%;   /* Maximum width of the image, you can adjust this */
+    max-height: 80%;  /* Maximum height of the image, you can adjust this */
+    display: block;   /* Removes any default margin or padding */
+}
