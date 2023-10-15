@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="zh">
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- 引入本地的 Bootstrap CSS 文件 -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- 引入本地的 Bootstrap JavaScript 文件（可选） -->
+<script src="js/bootstrap.min.js"></script>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab Introduction</title>
+    <title>Chen's Lab</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <div class="header">
-        <h1>Lab Introduction</h1>
+        <h1>Chen's Lab</h1>
     </div>
         <!-- 导航栏 -->
     <div class="navbar">
@@ -24,17 +30,20 @@
     <!-- 内容部分 -->
     <div class="content">
         <div id="home" class="section"></div>
-        <div id="research" class="section">Research content...</div>
-        <div id="team" class="section">Team content...</div>
-        <div id="publication" class="section">Publication content...</div>
-        <div id="contact" class="section">Contact content..3213.</div>
+        <div id="research" class="section"></div>
+        <div id="team" class="section"></div>
+        <div id="publication" class="section"></div>
+        <div id="contact" class="section"></div>
     </div>
 
     <!-- 底部内容 -->
-    <div class="footer">© National University of Singapore. All Rights Reserved.</div>
+    <footer class="container-fluid bg-dark text-white text-left py-3 fixed-bottom">
+        <div class="container">
+            © National University of Singapore. All Rights Reserved.
+        </div>
+    </footer>
 
     <script src="js/script.js"></script>
     
 </body>
 </html>
-
