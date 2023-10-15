@@ -10,40 +10,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chen's Lab</title>
+    <title>CHEN LAB</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <div class="header">
-        <h1>Chen's Lab</h1>
-    </div>
-        <!-- 导航栏 -->
-    <div class="navbar">
-        <a href="#" data-section="home">Home</a>
-        <a href="#" data-section="research">Research</a>
-        <a href="#" data-section="team">Team</a>
-        <a href="#" data-section="publication">Publication</a>
-        <a href="#" data-section="contact">Contact</a>
-    </div>
+    <div class="container-fluid">
+        <div class="row py-4"></div>
+        <div class="row">
+            <div class="col-1"></div> <!-- 右边的空白占用2列 -->
+            <div class="col-10">
+                <div class="row">
+                    <div class="header">
+                        <h1>CHEN LAB</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- 导航栏 -->
+                    <div class="navbar">
+                        <a href="#" data-section="home">HOME</a>
+                        <a href="#" data-section="research">RESEARCH</a>
+                        <a href="#" data-section="team">TEAM</a>
+                        <a href="#" data-section="publication">PUBLICATION</a>
+                        <a href="#" data-section="contact">CONTACT</a>
+                    </div>
+                </div>
 
-    <!-- 内容部分 -->
-    <div class="content">
-        <div id="home" class="section"></div>
-        <div id="research" class="section"></div>
-        <div id="team" class="section"></div>
-        <div id="publication" class="section"></div>
-        <div id="contact" class="section"></div>
-    </div>
+                <!-- 内容部分 -->
+                <div class="content">
+                    <div id="home" class="section"></div>
+                    <div id="research" class="section"></div>
+                    <div id="team" class="section"></div>
+                    <div id="publication" class="section"></div>
+                    <div id="contact" class="section"></div>
+                </div>
 
-    <!-- 底部内容 -->
-    <footer class="container-fluid bg-dark text-white text-left py-3 fixed-bottom">
-        <div class="container">
-            © National University of Singapore. All Rights Reserved.
+                <!-- 底部内容 -->
+                <footer class="container-fluid bg-dark text-white text-left py-3 fixed-bottom">
+                    <div class="container">
+                        © National University of Singapore. All Rights Reserved.
+                    </div>
+                </footer>
+            </div>
+            <div class="col-1"></div> <!-- 右边的空白占用2列 -->
         </div>
-    </footer>
-
+    </div>
     <script src="js/script.js"></script>
-    
 </body>
+
 </html>

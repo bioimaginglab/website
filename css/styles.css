@@ -61,7 +61,7 @@ body, html {
 }
 
 .image-container img {
-    max-width: 30%;   /* Maximum width of the image, you can adjust this */
-    max-height: 30%;  /* Maximum height of the image, you can adjust this */
+    max-width: 50%;   /* Maximum width of the image, you can adjust this */
+    max-height: 50%;  /* Maximum height of the image, you can adjust this */
     display: block;   /* Removes any default margin or padding */
 }
