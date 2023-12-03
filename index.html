@@ -8,58 +8,78 @@
 <script src="js/bootstrap.min.js"></script>
 
 <head>
+
     <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/page/page.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <base href="/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/lab-logo-2.png">
     <title>CHEN LAB</title>
     <link rel="stylesheet" href="css/styles.css">
-
-
     </style>
 
 </head>
 
-<body>
-    <div class="container-fluid">
-        <div class="row py-4"></div>
-        <div class="row">
-            <div class="col-1"></div> <!-- 右边的空白占用2列 -->
-            <div class="col-10">
-                <div class="row">
-                    <div class="header">
-                        <h1>CHEN LAB</h1>
-                        <div style="color: rgba(128, 128, 128, 0.7);">Optical Imaging Lab, National University of Singapore</div>
-                    </div>
+<body class="bg-black">
+    <div class="page-container">
+        <div class="row full-width-black-background">
+            <div class="everything">
+                <div class="header">
+                    <h1 class="title-font">CHEN LAB</h1>
+                    <div style="color: rgba(128, 128, 128, 0.7);">Optical Imaging Lab, National University of
+                        Singapore</div>
                 </div>
-                <div class="row">
-                    <!-- 导航栏 -->
-                    <div class="navbar">
-                        <a href="#" data-section="home">HOME</a>
-                        <a href="#" data-section="research">RESEARCH</a>
-                        <a href="#" data-section="team">TEAM</a>
-                        <a href="#" data-section="publication">PUBLICATION</a>
-                        <a href="#" data-section="contact">CONTACT</a>
-                    </div>
-                </div>
-
-                <!-- 内容部分 -->
-                <div class="content">
-                    <div id="home" class="section"></div>
-                    <div id="research" class="section"></div>
-                    <div id="team" class="section"></div>
-                    <div id="publication" class="section"></div>
-                    <div id="contact" class="section"></div>
-                </div>
-
-                <!-- 底部内容 -->
-                <footer class="container-fluid bg-dark text-white text-left py-1 fixed-bottom">
-                    <div class="container">
-                        © National University of Singapore. All Rights Reserved.
-                    </div>
-                </footer>
             </div>
-            <div class="col-1"></div> <!-- 右边的空白占用2列 -->
+        </div>
+        <div class="row full-width-black-background">
+            <div class="everything">
+                <!-- 导航栏 -->
+                <div class="navbar">
+                    <a href="/home" class="font-navbar">HOME</a>
+                    <a href="/research" class="font-navbar">RESEARCH</a>
+                    <a href="/team" class="font-navbar">TEAM</a>
+                    <a href="/publication" class="font-navbar">PUBLICATION</a>
+                    <a href="/contact" class="font-navbar">CONTACT</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 内容部分 -->
+        <div class="full-width-black-background">
+            <div class="content container bg-black text-white">
+                <div class="row">
+                    <div class="everything">
+                        <div id="home" class="section"></div>
+                        <div id="research" class="section"></div>
+                        <div id="team" class="section"></div>
+                        <div id="publication" class="section"></div>
+                        <div id="contact" class="section"></div>
+
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    <div class="full-width-black-background">
+        <!-- 底部内容 -->
+        <footer class="container-fluid bg-black text-white py-5">
+            <div class="container d-flex justify-content-between align-items-center">
+                <div>
+                    © National University of Singapore. All Rights Reserved.
+                </div>
+                <div>
+                    <img src="images/NUSRI-Suzhou-logo.png" alt="NUS Logo" style="max-height: 3em;">
+                    <!-- Ensure the image path is correct -->
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
     <script src="js/script.js"></script>
 </body>
 

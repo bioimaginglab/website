@@ -1,18 +1,22 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Layout</title>
+    <style>
+        /* This style sets the body to a full height flex container */
 
+        /* Styles for the image */
+        img {
+            max-width: 100%; /* Make sure the image is responsive and does not overflow the screen */
+            max-height: 100vh; /* Optional: limits the image height to the viewport height */
+            object-fit: contain; /* Ensures the image maintains aspect ratio without being cropped */
+        }
+    </style>
+</head>
 <body>
-    <div class="image-container">
-        <div class="row">
-        <img src="images/e7_stylized.jpg" alt="E7 building, NUS, Singapore">
-        </div>
-        <div class="row">
-            E7
-        </div>
-
-    </div>
-
-    <div class="image-container">  </div>
+    <img src="images/e7_stylized.jpg" alt="E7 building, NUS, Singapore">
+    <a>E7, 15 Kent Ridge Cres, Singapore, 119276</a>
 </body>
-
-
 </html>

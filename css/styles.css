@@ -1,56 +1,98 @@
-body {
-    font-family: Arial, sans-serif;
+
+  
+.title-font {
+    font-family: 'Lora','Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 4em;
+    /* Additional styling */
+}
+
+.everything {
+    width: 100%;
     margin: 0;
     padding: 0;
 }
 
+.full-width-black-background {
+    background-color: black; /* Set the background color to black */
+    color: white; /* Set the text color to white for better contrast */
+    width: 100%; /* Ensure the div takes the full viewport width */
+    margin-left: auto; /* Reset any margin to align properly */
+    margin-right: auto; /* Reset any margin to align properly */
+  }
+  
+
+
+@media (min-width: 768px) { /* Adjust the min-width as needed */
+    .everything {
+      max-width: 1200px; /* Maximum width of the content */
+      margin: 0 auto; /* Centers the content */
+      padding: 20px; /* Add padding if desired */
+    }
+  }
+
+
+body {
+    font-family: 'Merriweather', 'Times New Roman', Times, serif; /*Arial, sans-serif;*/
+    margin: 0;
+    padding: 0;
+}
+
+
 .navbar {
     background-color: #b6b4b400; /* dark gray background */
-    padding: 10px 20px;
-    text-align: center;
+    padding:0em 1em;
+    text-align: left;
 }
 
 .navbar a {
-    color: #899796; /* white text */
+    color: white; /* white text */
+    display: inline-block;
     text-decoration: none; /* removes the underline */
-    margin: 1em 0 0 0;
-    font-family: Arial, sans-serif; /* adjust this to your preferred font */
+    margin: 0.1em 0 0 0;
+    font-family: 'Roboto', 'Times New Roman', Arial, sans-serif; /* adjust this to your preferred font */
     font-size: 1.4em;
     /* padding: 8px 12px; */
-    border-radius: 5px; /* rounded corners */
     transition: background-color 0.3s; /* smooth transition for hover effect */
+    border-bottom: 0.05em solid transparent;
 }
 
 .navbar a:hover {
-    background-color: #575757; /* slightly lighter gray for hover */
-    color: #000000; /* white text */
+    border-bottom: 0.05em solid #ffffff; /* Add a solid line on hover */
 }
 
 .content {
     height: 70%;
-    padding: 5% 15%;
+    padding: 2% 10%;
     display: block;  /* 初始隐藏所有内容 */
+    background: #ffffff;
 }
 
-.section {
-    display: none;  /* 初始隐藏所有section */
-}
 
-.footer {
-    height: 15%;
-    background-color: #f1f1f1;
-    padding: 2% 5%;
+footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto; /* Set the footer's height */
+    background-color: #000; /* Footer background color */
+    padding: 10em 0; /* This will give padding inside the footer, making it larger if there's less content */
 }
 
 #home {
     display: block;
 }
 
+html {
+    position: relative;
+    min-height: 100%;
+    margin: 0;
+}
 
-
-body, html {
+body{
     height: 100%;
     margin: 0;
+    margin-bottom: 10em; /* same as the footer's height */
 }
 
 .image-container {
@@ -64,4 +106,9 @@ body, html {
     max-width: 50%;   /* Maximum width of the image, you can adjust this */
     max-height: 50%;  /* Maximum height of the image, you can adjust this */
     display: block;   /* Removes any default margin or padding */
+}
+
+.page-container {
+    min-height: 100%; /* Ensure at least full viewport height */
+    padding-bottom: 5em; /* Increase padding to push footer down */
 }

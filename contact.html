@@ -1,22 +1,20 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <style>
 
-    </style>
 </head>
+
 <body>
 
-
-<div class="container">
-    <div>Prof Chen's Optical Imaging Laboratory is under the Department of Biomedical Engineering and is located on the Kent Ridge Campus of the National University of Singapore.</div>
+    <div>Prof Chen's Optical Imaging Laboratory is under the Department of Biomedical Engineering and is located on
+        the Kent Ridge Campus of the National University of Singapore.</div>
     <br>
     <h1>CONTACT</h1>
-    
+
     <div class="row">
         <div class="col-md-5">
             <div class="contact-detail">
@@ -27,9 +25,7 @@
             </div>
         </div>
         <div class="col-md-7">
-            <div class="map">
-                <iframe src="https://my.atlist.com/map/7c87c5db-c776-461e-ade5-bdb8b2e67c76?share=true" allow="geolocation 'self' https://my.atlist.com" width="100%" height="400px" frameborder="0" scrolling="no" allowfullscreen></iframe>
-            </div>
+            <div id="map" style="height: 450px; width: 600px;"></div>
         </div>
     </div>
     <div class="row">
@@ -44,10 +40,28 @@
         </div>
     </div>
 
-</div>
 
 
-
-
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            // The location of Uluru
+            const uluru = { lat: -25.344, lng: 131.036 };
+            // The map, centered at Uluru
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 4,
+                center: uluru,
+            });
+            // The marker, positioned at Uluru
+            const marker = new google.maps.Marker({
+                position: uluru,
+                map: map,
+            });
+        }
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6P4sYK_YdUnO6yfEjLw3ZS3vRV3Zz3vA&callback=initMap">
+        </script>
 </body>
+
 </html>

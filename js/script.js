@@ -1,37 +1,20 @@
-$(document).ready(function() {
-    // Load home.html by default
-    $("#home").load("home.html");
-});
-
-document.addEventListener("DOMContentLoaded", function() {
-    const navLinks = document.querySelectorAll(".navbar a");
-    const sections = document.querySelectorAll(".section");
-    const contentArea = document.querySelector(".content");
-
-    navLinks.forEach(link => {
-        link.addEventListener("click", function(e) {
-            e.preventDefault();
-
-            // Hide all sections
-            sections.forEach(section => {
-                section.style.display = "none";
-            });
-
-            contentArea.style.display = "block";
-
-            // Show the target section
-            const targetId = this.getAttribute("data-section");
-            const targetSection = document.getElementById(targetId);
-
-            // Check if the link is for 'home'
-                // Fetch the content of home.html and insert it into the target div
-            fetch(targetId+'.html')
-            .then(response => response.text())
-            .then(data => {
-                targetSection.innerHTML = data;
-            });
-
-            targetSection.style.display = "block";
+function loadSection(section) {
+    fetch(section + '.html')
+        .then(response => response.text())
+        .then(html => {
+            document.querySelector('.content').innerHTML = html;
+        })
+        .catch(error => {
+            console.error('Error loading the section:', error);
         });
-    });
-});
+}
+
+page('/', () => loadSection('home'));
+page('/home', () => loadSection('home'));
+page('/research', () => loadSection('research'));
+page('/team', () => loadSection('team'));
+page('/publication', () => loadSection('publication'));
+page('/contact', () => loadSection('contact'));
+
+
+page.start();
