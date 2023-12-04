@@ -25,7 +25,7 @@
             </div>
         </div>
         <div class="col-md-7">
-            <div id="map" style="height: 450px; width: 600px;"></div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.79353672139!2d103.76865917928927!3d1.298633058381076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1b3281615883%3A0xfd3b5eca64e2ae61!2sE7%20building!5e0!3m2!1sen!2ssg!4v1701658637865!5m2!1sen!2ssg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
     <div class="row">
@@ -42,26 +42,7 @@
 
 
 
-    <script>
-        // Initialize and add the map
-        function initMap() {
-            // The location of Uluru
-            const uluru = { lat: -25.344, lng: 131.036 };
-            // The map, centered at Uluru
-            const map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 4,
-                center: uluru,
-            });
-            // The marker, positioned at Uluru
-            const marker = new google.maps.Marker({
-                position: uluru,
-                map: map,
-            });
-        }
-    </script>
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6P4sYK_YdUnO6yfEjLw3ZS3vRV3Zz3vA&callback=initMap">
-        </script>
+
 </body>
 
 </html>
